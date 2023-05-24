@@ -217,7 +217,7 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/AnimeToon_Hindi),
-                                               InlineKeyboardButton("Sʜᴀʀᴇ", url="https://t.me/share/url?url=https://t.me/CinemaChatRoom") ] ] ),
+                                               InlineKeyboardButton("Sʜᴀʀᴇ", url="https://t.me/share/url?url=https://t.me/AnimeToon_Hindi") ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
