@@ -24,10 +24,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/CinemaRoom')
-            ],
-            [
-                InlineKeyboardButton('Hᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/AnimeToon_Hindi')
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -43,12 +40,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('× 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/CinemaRoom')
-            ],[      
-            InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/AnimeToon_Hindi'),
             InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -66,12 +58,7 @@ async def start(client, message):
             return
 
         buttons = [[
-            InlineKeyboardButton('× 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/CinemaRoom')
-            ],[
-            InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/AnimeToon_Hindi'),
             InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -125,7 +112,7 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
-                    reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("⚡ Jᴏɪɴ Oᴜʀ Gʀᴏᴜᴘ ⚡", url="https://t.me/CinemaChatRoom") ] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("⚡ Join Main Channel ⚡", url="https://t.me/AnimeToon_Hindi") ] ] ),
                     protect_content=msg.get('protect', False),
                     )
             except FloodWait as e:
@@ -229,9 +216,8 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("Jᴏɪɴ Gʀᴏᴜᴘ", url="https://t.me/CinemaChatRoom"),
-                                               InlineKeyboardButton("Sʜᴀʀᴇ", url="https://t.me/share/url?url=https://t.me/CinemaChatRoom") ],
-                                             [ InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/CinemaRoom") ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/AnimeToon_Hindi),
+                                               InlineKeyboardButton("Sʜᴀʀᴇ", url="https://t.me/share/url?url=https://t.me/CinemaChatRoom") ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
