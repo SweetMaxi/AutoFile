@@ -198,7 +198,7 @@ async def start(client, message):
 
                     return
 
-            await msg.edit_caption(f_caption)
+            await msg.edit_captiom
 
             return
 
