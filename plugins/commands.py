@@ -216,8 +216,10 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/AnimeToon_Hindi),
-                                               InlineKeyboardButton("Sʜᴀʀᴇ", url="https://t.me/share/url?url=https://t.me/AnimeToon_Hindi") ] ] )
+        reply_markup=InlineKeyboardMarkup( [ [
+                                               InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/AnimeToon_Hindi"),
+                                               InlineKeyboardButton("Sʜᴀʀᴇ", url="https://t.me/share/url?url=https://t.me/AnimeToon_Hindi")
+                                           ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
