@@ -96,7 +96,7 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
         else:
             return True
     except UserNotParticipant:
-        text=""" × 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗧𝗼 𝗚𝗲𝘁 𝗙𝗶𝗹𝗲𝘀 × """
+        text=""" × Join Our Backup Channel To Use This Bot × """
 
         buttons = [
             [
