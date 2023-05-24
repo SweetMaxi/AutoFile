@@ -194,10 +194,6 @@ async def start(client, message):
                 try:
                     f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='')
                 except:
-                    return
-            await msg.edit_caption(f_caption)
-            return
-        except:
             pass
         return await message.reply('Name Error')
     files = files_[0]
